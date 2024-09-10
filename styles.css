@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  /* ألوان الخلفية */
+  --background-primary: #ffffff; /* خلفية أساسية بيضاء */
+  --background-secondary: #f5f5f5; /* خلفية ثانوية رمادي فاتح */
+
+  /* ألوان النصوص */
+  --text-primary: #2d2d2d; /* لون النص الأساسي أسود فحمي */
+  --text-secondary: #6b8e23; /* لون النص الثانوي أخضر زيتي */
+
+  /* ألوان العناصر */
+  --accent-color: #ffd700; /* لون مميز للفت الانتباه، مثل الذهبي */
+  --button-color: #ff8c00; /* لون الأزرار البرتقالي */
+  --link-color: #1e3a8a; /* لون الروابط الأزرق الداكن */
+  --highlight-color: #00bfff; /* لون مميز للإبراز */
+}
+
+body {
+  background-color: var(--background-primary);
+  font-family: "Poppins", sans-serif;
+
+}
+
+section {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:40px auto;
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+section .container {
+  width:650px ;
+  display: block;
+  padding: 10px;
+}
+section .container .title-ahmed {
+  text-align: center;
+}
+section .container .title-ahmed h1 {
+  color: var(--text-secondary);
+}
+section .container .title-ahmed h3 {
+  color: var(--highlight-color);
+}
+section .container .title-ahmed h4 {
+  color: var(--accent-color);
+}
+section .container .circle-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+ 
+section .container .social a {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--button-color);
+  text-decoration: none;
+  color: var(--link-color);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+section .container .social a:hover{
+  transition: .3s;
+  background-color: var(--accent-color);
+}
+ 
+@media (max-width:768px) {
+  section{
+    padding: 10px;
+    width: 100%;
+
+  }
+
+}
